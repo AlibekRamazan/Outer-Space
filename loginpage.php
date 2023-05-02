@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="loginpage.css">
+	<script type="loginpage.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<title>Log In</title>
+</head>
+<body>
+
+<div class="container">
+    <header>Log In</header>
+
+
+  <form action="log.php" method="post">
+    <?php
+        if($_COOKIE['user'] == ''):
+        ?>
+  <div class="form">
+    <div class="fields">
+      <div class=" input-field">
+            <label>Username</label>
+            <input type="text" placeholder="Enter your username" id="email" name="email" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$" required>
+          </div>
+
+          <div class=" input-field">
+            <label>Password</label>
+            <input type="text" placeholder="Enter your password" data-reg="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required name="password">
+          </div>
+      </div>
+      <button class="button">
+          <span class="btntext">Log In</span>
+          <i class="navigator"></i>
+      </button>
+    </div>
+  </div>
+  </form>
+  <?php else:
+$new_url = 'myacc.php';
+   ?>
+
+  
+    
+  <?php endif;?>
+</div>
+  
+
+
+   
+<script src="loginpage.js"></script>
+</body>
+</html>

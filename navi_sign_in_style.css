@@ -1,0 +1,129 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	min-height: 1000px;
+	background-color: white;
+	color: white;
+}
+
+/* Navigation bar --------------------------------------------*/ 
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;	
+	background-color: black;
+	/* background: transparent; */
+	/* padding: 28px 12%; */
+	transition: all .50s ease;
+}
+.logo img{
+	width: 200px;
+}
+.nav_links {
+	display: flex;
+}
+.nav_links a {
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
+	padding: 5px 0;
+	margin: 0px 30px;
+	transition: all .50s ease;
+}
+.nav_links a:hover {
+	color: grey;
+}
+.nav_links a.active{
+	color: grey;
+} 
+.main {
+	display: flex;
+	align-items: center;
+}
+.main a {
+	margin-right: 25px;
+	margin-left: 10px;
+	font-size: 1.1rem;
+	color: grey;
+	font-weight: 500;
+	transition: all .50s ease;
+}
+.user{
+	display: flex;
+	align-items: center;
+}
+.user i{
+	color: white;
+	font-size: 28px;
+	margin-right: 7px;
+}
+.main a:hover{
+	color: white;
+}
+#menu-icon{
+	font-size: 35px;
+	color: white;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+	/* header{
+		padding: 14px 2%;
+		transition: .2s;
+	}
+	.nav-links a{
+		padding: 5px 0;
+		margin: 0px 20px;
+	} */
+}
+
+@media (max-width: 1000px){
+	#menu-icon{
+		display: block;
+	}
+	.nav_links {
+		position: absolute;
+		top: 100%;
+		right: -100%;
+		width: 270px;
+		height: 29vh;
+		background: lightgrey;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 10px;
+		transition: all .50s ease;
+		z-index: 10001;
+	}
+	.nav_links a{
+		display: block;
+		margin: 12px 0;
+		padding: 0px 25px;
+		transition: all .50s ease;
+	}
+	.nav_links a:hover{
+		color: white;
+		transform: translateY(5px);
+	}
+	.nav_links a.active{
+		color: white;
+	}
+	.nav_links.open{
+		right: 2%;
+	}
+}

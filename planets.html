@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Planets</title>
+	<!--Icon-->
+	<link rel="icon" type="image/x-icon" href="materials/os_logo.png">
+	<!--profile icon-->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<!--Css file-->
+	<link rel="stylesheet" type="text/css" href="style_planets.css">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+	<!--Slide-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--Menu icon-->
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<!-- Swiper CSS -->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+
+<!--Navigation bar-->
+<header>
+		<div class="logo">
+			<img src="materials/os_logo_black.png">
+		</div>
+
+		<ul class="nav_links">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="planets.html" class="active">Planets</a></li>
+			<li><a href="small_objects.html">Small objects</a></li>
+			<li><a href="news.html">News</a></li>
+		</ul>
+
+		<div class="main">
+			<a href="user_profile.html" class="user"><i class="ri-user-fill"></i></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+		</div>
+</header>
+
+<!--Background video-->
+<video autoplay loop muted class="bg_video" id="bg_video">
+	<source src="materials/bg_video.mp4" type="video/mp4"></source>
+</video>
+
+<!--Head-->
+<div class="head">
+	<h1>Planets in Our Solar System</h1>
+</div>
+
+<!--Information blog-->
+<div class="info">
+	<div class="blog1">
+		<h1>What is the Planet?</h1>
+		<p>	A planet is a large, rounded astronomical body that is neither a star nor its remnant. The best available theory of planet formation is the nebular hypothesis, which posits that an interstellar cloud collapses out of a nebula to create a young protostar orbited by a protoplanetary disk. Planets grow in this disk by the gradual accumulation of material driven by gravity, a process called accretion.</p>
+		<p>	The Solar System has at least eight planets: the terrestrial planets Mercury, Venus, Earth and Mars, and the giant planets Jupiter, Saturn, Uranus and Neptune. These planets each rotate around an axis tilted with respect to its orbital pole. All of them possess an atmosphere, although that of Mercury is tenuous, and some share such features as ice caps, seasons, volcanism, hurricanes, tectonics, and even hydrology. Apart from Venus and Mars, the Solar System planets generate magnetic fields, and all except Venus and Mercury have natural satellites. The giant planets bear planetary rings, the most prominent being those of Saturn.</p>
+	</div>
+</div>
+
+<div class="photo">
+	<center><img src="materials/mini_planets.jpg"></center>
+</div>
+
+<!--Slide-->
+<div class="each_planet">
+	<div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_mercury.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mercury</h2>
+                            <p class="description">"Mercury—the smallest planet in our solar system and closest to the Sun—is only slightly larger than Earth's Moon. Mercury is the fastest planet, zipping around the Sun every 88 Earth days."</p>
+
+                            <button class="button"><a href="mercury.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_venus.png" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Venus</h2>
+                            <p class="description">"Venus spins slowly in the opposite direction from most planets. A thick atmosphere traps heat in a runaway greenhouse effect, making it the hottest planet in our solar system."</p>
+
+                            <button class="button"><a href="venus.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_earth.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Earth</h2>
+                            <p class="description">"Earth—our home planet—is the only place we know of so far that’s inhabited by living things. It's also the only planet in our solar system with liquid water on the surface."</p>
+
+                            <button class="button"><a href="earth.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_mars.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Mars</h2>
+                            <p class="description">"Mars is a dusty, cold, desert world with a very thin atmosphere. There is strong evidence Mars was – billions of years ago – wetter and warmer, with a thicker atmosphere."</p>
+
+                            <button class="button"><a href="mars.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_jupiter.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jupiter</h2>
+                            <p class="description">"Jupiter is more than twice as massive than the other planets of our solar system combined. The giant planet's Great Red spot is a centuries-old storm bigger than Earth."</p>
+
+                            <button class="button"><a href="jupiter.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_saturn.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Saturn</h2>
+                            <p class="description">"Adorned with a dazzling, complex system of icy rings, Saturn is unique in our solar system. The other giant planets have rings, but none are as spectacular as Saturn's."</p>
+
+                            <button class="button"><a href="saturn.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_uranus.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Uranus</h2>
+                            <p class="description">"Uranus—seventh planet from the Sun—rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side."</p>
+
+                            <button class="button"><a href="uranus.html">View More</a></button>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="materials/planet_neptune.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Neptune</h2>
+                            <p class="description">"Neptune—the eighth and most distant major planet orbiting our Sun—is dark, cold and whipped by supersonic winds. It was the first planet located through mathematical calculations."</p>
+
+                            <button class="button"><a href="neptune.html">View More</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+	</div>
+</div>
+
+<!--Footer-->
+<footer>
+	<div class="footer_links">
+		<div class="col">
+			<h4>Outer Space</h4>
+			<ul>
+				<li><a href="aboutus.html">About us</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Planets</h4>
+			<ul>
+				<li><a href="mercury.html">Mercury</a></li>
+				<li><a href="venus.html">Venus</a></li>
+				<li><a href="earth.html">Earth</a></li>
+				<li><a href="mars.html">Mars</a></li>
+				<li><a href="jupiter.html">Jupiter</a></li>
+				<li><a href="saturn.html">Saturn</a></li>
+				<li><a href="uranus.html">Uranus</a></li>
+				<li><a href="neptune.html">Neptune</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Small Objects</h4>
+			<ul>
+				<li><a href="asteroids.html">Asteroids</a></li>
+				<li><a href="comets.html">Comets</a></li>
+				<li><a href="meteorites.html">Meteorites</a></li>
+			</ul>
+		</div>
+		<div class="col">
+			<h4>Follow Us</h4>
+			<div class="soc_med">
+				<a href="https://www.instagram.com/"><i class="ri-instagram-line"></i></a>
+				<a href="https://web.telegram.org/k/"><i class="ri-telegram-line"></i></a>
+				<a href="https://www.youtube.com/"><i class="ri-youtube-line"></i></a>
+				<a href="https://ru-ru.facebook.com/"><i class="ri-facebook-line"></i></a>
+				<a href="https://twitter.com/"><i class="ri-twitter-line"></i></a>
+			</div>
+
+		</div>
+	</div>
+	<hr>
+	<div class="bc">
+		<p>© Copyright All Rights Reserved 2022, Outer Space</p>
+	</div>
+</footer>
+
+<!-- Swiper JS -->
+<script src="swiper-bundle.min.js"></script>
+<!--JS for slide-->
+<script src="script.js"></script>
+<!--JS for menu-->
+<script src="js_navigation.js"></script>
+
+</body>
+</html>
